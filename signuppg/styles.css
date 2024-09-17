@@ -1,0 +1,148 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f6f5f7;
+    margin: 0;
+}
+
+/* Center container for all the content */
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Welcome header styles */
+#information {
+    width: 100%;
+    max-width: 900px;
+    background-color: #ff4b2b;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+    display: none;  /* Initially hidden */
+}
+
+/* Additional styling for #information */
+#information h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Main container for forms */
+.container {
+    display: flex;
+    width: 900px;
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Sign In and Sign Up forms */
+.form-box {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+
+/* Sign In form box styles */
+.sign-in-box {
+    background-color: #fff;
+}
+
+.sign-in-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Sign Up form box styles */
+.sign-up-box {
+    background-color: #ff4b2b;
+}
+
+.sign-up-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Input fields */
+input {
+    background-color: #eee;
+    border: none;
+    padding: 15px 20px;
+    margin: 10px 0;
+    width: 80%;
+    border-radius: 5px;
+}
+
+.sign-up-box input {
+    background-color: #fff;
+}
+
+/* Buttons */
+button {
+    border: none;
+    padding: 12px 40px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Sign In button */
+.sign-in-box button {
+    background-color: #ff4b2b;
+    color: #fff;
+}
+
+.sign-in-box button:hover {
+    background-color: #ff3a1a;
+}
+
+/* Sign Up button */
+.sign-up-box button {
+    background-color: #fff;
+    color: #ff4b2b;
+}
+
+.sign-up-box button:hover {
+    background-color: #eee;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .form-box {
+        width: 100%;
+    }
+}
